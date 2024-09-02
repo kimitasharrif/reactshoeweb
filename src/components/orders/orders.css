@@ -1,0 +1,73 @@
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout {
+  width: 100%;
+  height: 200px; /* Adjust this height as needed for your top bar */
+  background-color: #f8f9fa; /* You can change this background color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  display: flex;
+  margin-top: 200px; /* This should match the height of the top bar */
+  height: calc(100vh - 200px); /* Adjust the content height based on the top bar */
+}
+
+.search{
+  width: 60%;
+  align-items: center;
+}
+
+/* Scrollable table container */
+.table-container {
+  left: 0px;
+  bottom: 10px;
+  right: 0%;
+  max-height: 100%; /* Set your desired max height */
+ /* Enable vertical scrolling */
+}
+
+/* Styling for tables or other content */
+.table {
+  width: 100%;
+  left: 0px;
+  right: 0px;
+  border-collapse: collapse;
+  border: 1px solid #ddd; 
+}
+
+.table th, .table td {
+  padding: 5px;
+  text-align: left;
+  border: 1px solid #ddd; /* Border for table cells */
+}
+
+.table th {
+  background-color: #f4f4f4; /* Background for table headers */
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.text-warning, .text-danger, .text-info {
+  margin: 10px 0;
+}
+
+/* Ensure the input is styled correctly */
+.form-control {
+  width: 100%;
+  margin-bottom: 20px;
+}

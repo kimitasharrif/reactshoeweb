@@ -1,0 +1,39 @@
+.shoe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.shoe-card:hover {
+  transform: scale(1.05);
+}
+
+.shoe-card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.shoe-card-content {
+  padding: 15px;
+}
+
+.shoe-card-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.shoe-card-description {
+  color: #555;
+  margin: 10px 0;
+}
+
+.shoe-card-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #f10c0c;
+}

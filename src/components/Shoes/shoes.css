@@ -1,0 +1,48 @@
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout {
+  width: 100%;
+  height: 200px; /* Adjust this height as needed for your top bar */
+  background-color: #f8f9fa; /* You can change this background color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  display: flex;
+  margin-top: 200px; /* This should match the height of the top bar */
+  height: calc(100vh - 200px); /* Adjust the content height based on the top bar */
+}
+
+/* Shoes container occupies the remaining space */
+.shoes-container {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 20px;
+    top: 80px;
+}
+
+.card-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+}

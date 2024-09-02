@@ -1,0 +1,68 @@
+/* styletopbar nav  */
+.topbar {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 80%; /* Changed to 80% for 10% margin on both sides */
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    padding: 30px;
+    overflow: auto;
+    justify-content: space-between; /* Ensure space between elements */
+}
+
+/* style topbar admin */
+.topbar-admin {
+    color: rgb(110, 74, 7);
+    display: flex;
+    align-items: center; /* Changed to center for alignment */
+    margin-left: 0; /* Removed margin for better centering */
+}
+
+/* content topbar styling */
+.topbar-content {
+    display: flex;
+    flex-grow: 1; /* Allow it to grow and take available space */
+    align-items: center; /* Align items center vertically */
+}
+
+/* topbar search styling */
+.topbar-search {
+    margin-left: 20px;
+    flex-grow: 1; /* Allow the search input to grow and fill space */
+}
+
+.search-input {
+    width: 100%; /* Full width of the parent container */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 20px;
+}
+
+/* topbar account */
+.topbar-account {
+    margin-left: 20px;
+}
+
+/* topbar icon */
+.topbar-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* topbar image */
+.topbar-image {
+    margin-right: 1rem;
+}
+
+/* target the svg icons */
+svg {
+    color: brown;
+    font-size: 24px;
+}

@@ -1,0 +1,21 @@
+.shoe-list {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.shoe-list h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shoe-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.shoe-list-grid .shoe-card {
+  flex: 1 1 calc(25% - 20px); /* 4 cards per row with gap adjustment */
+  max-width: calc(25% - 20px);
+}
