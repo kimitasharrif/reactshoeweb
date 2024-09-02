@@ -47,7 +47,7 @@ const Orders = () => {
         <Layout /> {/* Your layout with the top bar and navbar */}
       </div>
       <div className="content-area">
-        <div>
+        <div className="card-container"> 
           {loading && <p className="text-warning">Loading ... </p>}
           {error && <p className="text-danger">Error occurred. Try later.</p>}
           <input

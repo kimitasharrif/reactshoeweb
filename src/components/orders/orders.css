@@ -20,6 +20,12 @@
   margin-top: 200px; /* This should match the height of the top bar */
   height: calc(100vh - 200px); /* Adjust the content height based on the top bar */
 }
+.card-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .search{
   width: 60%;
@@ -37,7 +43,6 @@
 
 /* Styling for tables or other content */
 .table {
-  width: 100%;
   left: 0px;
   right: 0px;
   border-collapse: collapse;
@@ -67,7 +72,7 @@
 }
 
 /* Ensure the input is styled correctly */
-.form-control {
+/* .form-control {
   width: 100%;
   margin-bottom: 20px;
-}
+} */
