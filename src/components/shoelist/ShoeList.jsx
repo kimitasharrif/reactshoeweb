@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import ShoeCard from '../shoecard/ShoeCard'; // Import the ShoeCard component
-import './shoelist.css'; // Import CSS for the list styling
+import ShoeCard from '../shoecard/ShoeCard';
+import './shoelist.css';
 import axiosInstance from '../../helpers/axiosInstance';
 
-const ShoeList = ({ selectedCategories }) => {
+const ShoeList = ({ selectedCategories, addToCart }) => {
   const [shoes, setShoes] = useState([]);
   const [failure, setFailure] = useState(null);
 
@@ -11,7 +11,7 @@ const ShoeList = ({ selectedCategories }) => {
     axiosInstance
       .get("/shoes")
       .then((response) => {
-        setShoes(response.data || []); // Ensure that shoes is always an array
+        setShoes(response.data || []);
       })
       .catch((error) => {
         setFailure(error.message);
@@ -30,7 +30,7 @@ const ShoeList = ({ selectedCategories }) => {
     <div className="shoe-list">
       <div className="shoe-list-grid">
         {filteredShoes.map((shoe) => (
-          <ShoeCard key={shoe.id} shoe={shoe} />
+          <ShoeCard key={shoe.id} shoe={shoe} addToCart={addToCart} />
         ))}
       </div>
     </div>

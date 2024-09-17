@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import axiosInstanceToken from "../../helpers/axiosInstanceToken";
-import './categories.css';
+import axiosInstance from "../../helpers/axiosInstance";
+import './categories.css'
 
-const Categories = ({ selectedCategories, setSelectedCategories }) => {
+const Categories = ({ selectedCategories = [], setSelectedCategories }) => {
   const [categorys, setcategorys] = useState([]);
 
   useEffect(() => {
-    axiosInstanceToken.post("/categories")
+    axiosInstance.post("/categories")
       .then((response) => {
         setcategorys(response.data);
       })
@@ -32,6 +32,7 @@ const Categories = ({ selectedCategories, setSelectedCategories }) => {
             type="checkbox"
             id={category.category_id}
             value={category.category_id}
+            checked={selectedCategories.includes(category.category_id)} // Ensure checkbox reflects selection
             onChange={() => handleCheckboxChange(category.category_id)}
           />
           <label htmlFor={category.category_id}>{category.category_name}</label>

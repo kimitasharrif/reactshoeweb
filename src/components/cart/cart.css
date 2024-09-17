@@ -1,0 +1,102 @@
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.layout {
+  width: 100%;
+  height: 200px; /* Adjust this height as needed for your top bar */
+  background-color: #f8f9fa; /* Background color */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-area {
+  display: flex;
+  margin-top: 200px; /* This should match the height of the top bar */
+  height: calc(100vh - 200px); /* Adjust the content height based on the top bar */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin-bottom: 20px;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+}
+
+.cart-item-details h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cart-item-details p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.remove-item-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-item-button:hover {
+  background-color: #c82333;
+}
+
+.cart-total {
+  margin-top: 20px;
+}
+
+.go-home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.go-home-link:hover {
+  background-color: #0056b3;
+}
